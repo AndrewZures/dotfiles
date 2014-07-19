@@ -6,7 +6,6 @@ class Installer
   attr_accessor :options
 
   def install
-    self.greet
     self.options = Options.build
     self.run
   end
@@ -25,12 +24,6 @@ class Installer
       FileUtils.rm_rf target_location if File.symlink?(target_location) || File.exist?(target_location)
       FileUtils.ln_s file, target_location
     end
-  end
-
-  def greet
-    CLI.out
-    CLI.out "Welcome to the Installation Installer Thing -- would you mind answering a few questions about your target installations today?"
-    CLI.out
   end
 
   def run
