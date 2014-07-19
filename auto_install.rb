@@ -43,7 +43,7 @@ class CLI
 end
 
 class Options
-  KEYS = ["zsh", "tmux", "vim", "git", "gem", "emacs.d"]
+  KEYS = ["zsh", "tmux", "vim", "git", "gem"]
 
   def self.build
     options = new
