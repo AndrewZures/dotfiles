@@ -6,13 +6,19 @@ class Installer
   attr_accessor :options
 
   def install
+    self.throw_error
     self.options = Options.build
     self.run
   end
 
+  def throw_error
+    raise 'whoa'
+  end
+
   def symlink
     working_dir = File.expand_path(File.dirname(__FILE__))
-    home_dir    = File.expand_path("~")
+    home_dir    = File.expand_path("/home/vagrant")
+    exit 0 if !Dir.exists?(home_dir) || !Dir.exists?(working_dir)
     files       = self.options.get_selected_files(Dir.glob(File.join(working_dir,"*")))
 
     files.each do |file|
