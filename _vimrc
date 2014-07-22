@@ -107,6 +107,10 @@ nmap g' :%s/<C-R><C-W>/
 nmap gy :.w !pbcopy<CR><CR>
 vmap gy :w !pbcopy<CR><CR>
 
+nmap go :tabnew<CR>
+nmap gu :tabclose<CR>
+nmap gU :tabonly<CR>
+
 nmap gn :cnext<CR>
 nmap gp :cprev<CR>
 nmap gq :ccl<CR>
