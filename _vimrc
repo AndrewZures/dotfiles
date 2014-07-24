@@ -100,6 +100,9 @@ nmap g/ :Ggrep<space>
 " nmap g* :Ggrep <C-R><C-W>
 nmap g. :Ggrep <C-R><C-W>
 
+"Ggrep current word into new tab
+map g: "ayaw <Bar> :tab split <Bar> :Ggrep <C-R>a<CR>
+
 "replace selected word
 nmap g' :%s/<C-R><C-W>/
 
