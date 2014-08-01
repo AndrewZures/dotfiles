@@ -1,4 +1,3 @@
-
 let NERDTreeMinimalUI           = 1
 let NERDTreeQuitOnOpen          = 0
 let NERDChristmasTree           = 1
