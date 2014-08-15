@@ -110,8 +110,9 @@ nmap g' :%s/<C-R><C-W>/
 " nmap gy :.w !pbcopy<CR><CR>
 " vmap gy :w !pbcopy<CR><CR>
 
-nmap gy "+y<CR><CR>
-vmap gy "+y<CR><CR>
+nmap ggy "+yy
+vmap ggy "+y<CR>
+nmap ggp :call SmartPaste()<CR>
 
 nmap go :tabnew<CR>
 nmap gu :tabclose<CR>
@@ -142,11 +143,9 @@ let g:syntastic_enable_signs=1
 "syntax highlighting functions
 let g:solarized_termcolors=256
 
-nmap <leader>p :call SmartPaste()<CR>
-
 function! SmartPaste()
   exe ':set paste'
-  exe ':r !pbpaste'
+  exe 'normal "+p'
   exe ':set nopaste'
 endfunction
 
