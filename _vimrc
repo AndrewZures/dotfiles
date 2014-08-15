@@ -107,8 +107,11 @@ map g: "ayaw <Bar> :tab split <Bar> :Ggrep <C-R>a<CR>
 nmap g' :%s/<C-R><C-W>/
 
 "copy to osx clipboard
-nmap gy :.w !pbcopy<CR><CR>
-vmap gy :w !pbcopy<CR><CR>
+" nmap gy :.w !pbcopy<CR><CR>
+" vmap gy :w !pbcopy<CR><CR>
+
+nmap gy "+y<CR><CR>
+vmap gy "+y<CR><CR>
 
 nmap go :tabnew<CR>
 nmap gu :tabclose<CR>
@@ -131,7 +134,6 @@ function! Trim()
   exe "normal zz"
 endfunction
 
-
 "syntastic/lint
 let g:syntastic_javascript_checkers =['jshint']
 let g:syntastic_check_on_open=1
@@ -139,6 +141,14 @@ let g:syntastic_enable_signs=1
 
 "syntax highlighting functions
 let g:solarized_termcolors=256
+
+nmap <leader>p :call SmartPaste()<CR>
+
+function! SmartPaste()
+  exe ':set paste'
+  exe ':r !pbpaste'
+  exe ':set nopaste'
+endfunction
 
 function! SetBorder()
   exe 'hi CursorLine ctermbg=NONE'
@@ -179,15 +189,9 @@ function! TomorrowNight()
   call ClearBackground()
 endfunction
 
-function! Test()
-  exe '!grunt connect jazz:src/%'
-
-endfunction
-
 call SolarizedDark()
 call SetBorder()
 call MakeLight()
-"call TomorrowNight()
 
 command! -nargs=0 Trim :call Trim()
 command! -nargs=0 MakeLight :call MakeLight()
