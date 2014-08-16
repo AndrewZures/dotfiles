@@ -79,10 +79,32 @@ alias gmacs='open . -a emacs'
 alias gemreset='rvm gemset --force empty && gem install bundler && bundle'
 alias iphonesim='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app'
 
+alias 8th="cd ~/Desktop/8thlight"
+alias engine="cd ~/Desktop/8thlight/projects/health_engine"
+alias proj="cd ~/Desktop/8thlight/projects"
+alias myproj="cd ~/Desktop/8thlight/my_projects"
+
 # Bindings
 bindkey -M viins '^R' history-incremental-pattern-search-backward
 bindkey -M viins '^F' history-incremental-pattern-search-forward
 bindkey -M viins '^P' up-history
 bindkey -M viins '^N' down-history
+
+bindkey "^J" backward-char
+bindkey "^K" forward-char
+bindkey "^H" backward-word
+bindkey "^g^j" beginning-of-line
+bindkey "^g^k" end-of-line
+bindkey "^d^d" modified-kill-word
+bindkey "^x" delete-char
+bindkey "^d^k" kill-line
+bindkey "^d^j" backward-kill-line
+bindkey "^s" undo
+
+modified-kill-word() {
+  zle kill-word
+  zle delete-char
+}
+zle -N modified-kill-word
 
 typeset -U path cdpath fpath
