@@ -40,7 +40,7 @@ zstyle ':completion:*:default' menu 'select=0' # menu-style
 # Functions
 git_prompt_info() {
   ref=$($(which git) symbolic-ref HEAD 2> /dev/null) || return
-  mods=$(vcprompt -f %m%u%a) || return
+  mods=$(vcprompt -f %m%u) || return
   echo "%{$reset_color%}(%{$fg[red]%}${ref#refs/heads/}%{$fg[yellow]%}${mods}%{$reset_color%})"
 }
 

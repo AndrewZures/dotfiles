@@ -110,8 +110,8 @@ nmap g' :%s/<C-R><C-W>/
 " nmap gy :.w !pbcopy<CR><CR>
 " vmap gy :w !pbcopy<CR><CR>
 
-nmap ggy "*yy
-vmap ggy "*y<CR>
+nmap ggy "+yy
+vmap ggy "+y<CR>
 nmap ggp :call SmartPaste()<CR>
 
 nmap go :tabnew<CR>
@@ -145,7 +145,7 @@ let g:solarized_termcolors=256
 
 function! SmartPaste()
   exe ':set paste'
-  exe 'normal "*p'
+  exe 'normal "+p'
   exe ':set nopaste'
 endfunction
 
