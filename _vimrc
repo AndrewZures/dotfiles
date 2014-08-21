@@ -86,7 +86,8 @@ nmap <F8> :TagbarToggle<CR>
 
 nmap , \
 
-map <Leader>t :CommandT<CR>
+" map <Leader>t :CommandT<CR>
+map <Leader>t :CtrlP<CR>
 map <silent> <LocalLeader>fb :CommandTBuffer<CR>
 map <silent> <LocalLeader>fr :CommandTFlush<CR>
 
@@ -114,9 +115,9 @@ nmap ggy "+yy
 vmap ggy "+y<CR>
 nmap ggp :call SmartPaste()<CR>
 
-nmap go :tabnew<CR>
-nmap gu :tabclose<CR>
-nmap gU :tabonly<CR>
+nmap gtn :tabnew<CR>
+nmap gtc :tabclose<CR>
+nmap gto :tabonly<CR>
 
 nmap gn :cnext<CR>
 nmap gp :cprev<CR>
