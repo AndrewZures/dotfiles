@@ -69,7 +69,7 @@ function sg {
 }
 
 # Prompt
-export PROMPT='%m%{$reset_color%}:%{$fg[cyan]%}%c$(git_prompt_info) %{$reset_color%}%% '
+# export PROMPT='%m%{$reset_color%}:%{$fg[cyan]%}%c$(git_prompt_info) %{$reset_color%}%% '
 
 # Aliases
 alias bx="bundle exec"
@@ -108,3 +108,11 @@ modified-kill-word() {
 zle -N modified-kill-word
 
 typeset -U path cdpath fpath
+
+alias cd=---
+
+echo -ne "\033]0;"$(basename $PWD)"\007"
+---(){
+  \cd $1
+  echo -ne "\033]0;"$(basename $PWD)"\007"
+}
