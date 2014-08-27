@@ -108,11 +108,15 @@ modified-kill-word() {
 }
 zle -N modified-kill-word
 
+export LSCOLORS=''
+
 typeset -U path cdpath fpath
 
 alias cd=---
+ export PROMPT='%{$fg[cyan]%}%~$(git_prompt_info) %{$reset_color%}%% '
 
 echo -ne "\033]0;"$(basename $PWD)"\007"
+
 ---(){
   \cd $1
   echo -ne "\033]0;"$(basename $PWD)"\007"
