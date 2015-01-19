@@ -38,35 +38,6 @@ zstyle ':completion:*:default' menu 'select=0' # menu-style
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 # Functions
-git_prompt_info() {
-  ref=$($(which git) symbolic-ref HEAD 2> /dev/null) || return
-  mods=$(vcprompt -f %m%u) || return
-  echo "%{$reset_color%}(%{$fg[red]%}${ref#refs/heads/}%{$fg[yellow]%}${mods}%{$reset_color%})"
-}
-
-function ss {
-  if [ -e script/rails ]; then
-    script/rails server $@
-  else
-    script/server $@
-  fi
-}
-
-function sc {
-  if [ -e script/rails ]; then
-    script/rails console $@
-  else
-    script/console $@
-  fi
-}
-
-function sg {
-  if [ -e script/rails ]; then
-    script/rails generate $@
-  else
-    script/generate $@
-  fi
-}
 
 # Prompt
 # export PROMPT='%m%{$reset_color%}:%{$fg[cyan]%}%c$(git_prompt_info) %{$reset_color%}%% '
@@ -111,13 +82,3 @@ zle -N modified-kill-word
 export LSCOLORS=''
 
 typeset -U path cdpath fpath
-
-alias cd=---
- export PROMPT='%{$fg[cyan]%}%~$(git_prompt_info) %{$reset_color%}%% '
-
-echo -ne "\033]0;"$(basename $PWD)"\007"
-
----(){
-  \cd $1
-  echo -ne "\033]0;"$(basename $PWD)"\007"
-}
