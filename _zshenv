@@ -38,9 +38,14 @@ zstyle ':completion:*:default' menu 'select=0' # menu-style
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 # Functions
+git_prompt_info() {
+  ref=$($(which git) symbolic-ref HEAD 2> /dev/null) || return
+  mods=$(vcprompt -f %m%u)
+  echo "%{$reset_color%}(%{$fg[red]%}${ref#refs/heads/}%{$fg[yellow]%}${mods}%{$reset_color%})"
+}
 
 # Prompt
-# export PROMPT='%m%{$reset_color%}:%{$fg[cyan]%}%c$(git_prompt_info) %{$reset_color%}%% '
+export PROMPT='%m%{$reset_color%}:%{$fg[cyan]%}%c$(git_prompt_info) %{$reset_color%}%% '
 
 # Aliases
 alias bx="bundle exec"
