@@ -1,5 +1,5 @@
-linked/_vim/bundle
-!linked/_vim/bundle/Vundle.vim
+linked/_vim/bundle/*
+!linked/_vim/bundle/Vundle.vim/
 linked/_vim/.netrwhist
 linked/_emacs.d/elpa
 linked/_emacs.d/ido.last
