@@ -1,4 +1,4 @@
-set rtp+=~/.vim/bundles/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " basic
@@ -29,3 +29,28 @@ filetype plugin indent on
 "
 " filetype off
 
+"Nerd Tree
+
+let NERDTreeMinimalUI           = 1
+let NERDTreeQuitOnOpen          = 0
+let NERDChristmasTree           = 1
+let NERDTreeHighlightCursorline = 0
+let NERDTreeWinSize             = 35
+let NERDTreeDirArrows           = 1
+let NERDTreeStatusline          = ' '
+let NERDTreeShowHidden          = 1
+let NERDTreeChDirMode           = 1
+let NERDTreeShowLineNumbers     = 0
+let NERDTreeMouseMode           = 2
+let NERDTreeAutoCenter          = 1
+let NERDTreeAutoCenterThreshold = 10
+let NERDTreeIgnore              = ['\.git', '\.pyc', '\.jhw-cache']
+
+" Syntastic
+
+"general keymaps
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=1
+
+"language specific linters
+let g:syntastic_javascript_checkers =['jshint']

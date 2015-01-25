@@ -14,7 +14,7 @@ class Installer
   def symlink
     working_dir = File.expand_path(File.dirname(__FILE__))
     home_dir    = File.expand_path("~")
-    files       = self.options.get_selected_files(Dir.glob(File.join(working_dir,"*")))
+    files       = self.options.get_selected_files(Dir.glob(File.join(working_dir, "linked", "*")))
 
     files.each do |file|
       filename =  File.basename(file)
@@ -77,7 +77,7 @@ class Options
   end
 
   def self.rewrite_git_name_and_email
-    filename = "_gitconfig"
+    filename = "linked/_gitconfig"
     CLI.out "what's your name? (for git config)"
     name = CLI.get
 
