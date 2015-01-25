@@ -11,7 +11,7 @@ Plugin 'mattn/gist-vim'                      "vim -> gist
 Plugin 'airblade/vim-gitgutter'              "git info in vim gutter
 Plugin 'tpope/vim-fugitive'                  "git actions in vim
 Plugin 'kien/ctrlp.vim'                      "quick find files
-Plugin 'vim-scripts/tComment' 		     "commenter
+Plugin 'vim-scripts/tComment' 		           "commenter
 
 "languages
 Plugin 'kchmck/vim-coffee-script'            "coffeescript
@@ -24,13 +24,7 @@ Plugin 'chriskempson/tomorrow-theme'
 call vundle#end()
 filetype plugin indent on
 
-
-" set nocompatible
-"
-" filetype off
-
 "Nerd Tree
-
 let NERDTreeMinimalUI           = 1
 let NERDTreeQuitOnOpen          = 0
 let NERDChristmasTree           = 1
@@ -47,8 +41,6 @@ let NERDTreeAutoCenterThreshold = 10
 let NERDTreeIgnore              = ['\.git', '\.pyc', '\.jhw-cache']
 
 " Syntastic
-
-"general keymaps
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 

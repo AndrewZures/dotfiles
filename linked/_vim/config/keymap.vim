@@ -8,7 +8,7 @@ set winminwidth=15
 "general editor settings
 syntax on
 set incsearch             "show currently matching patterns while typing search
-set hlsearch  		        "highlight search results
+set hlsearch              "highlight search results
 set number                "add line numbers
 set showmatch             "briefly jump to matching bracket
 set hidden                "<
