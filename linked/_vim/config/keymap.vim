@@ -6,6 +6,7 @@ set winwidth=90
 set winminwidth=15
 
 "general editor settings
+syntax on
 set incsearch             "show currently matching patterns while typing search
 set hlsearch  		        "highlight search results
 set number                "add line numbers
@@ -36,9 +37,12 @@ set shiftwidth=2        "<
 set softtabstop=2       "<
 set expandtab           "<
 
-"toggle nerdtree
-map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
 
-"find current file in nerdtree
+" NerdTree
+map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
 map <silent> <LocalLeader>nf :NERDTreeFind<CR>
 
+" Control P
+map <Leader>t :CtrlP<CR>
+map <silent> <LocalLeader>fb :CommandTBuffer<CR>
+map <silent> <LocalLeader>fr :CommandTFlush<CR>

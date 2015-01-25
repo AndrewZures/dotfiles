@@ -1,3 +1,4 @@
 source ~/.vim/config/plugins.vim
 source ~/.vim/config/keymap.vim
 source ~/.vim/config/background.vim
+source ~/.vim/config/functions.vim
