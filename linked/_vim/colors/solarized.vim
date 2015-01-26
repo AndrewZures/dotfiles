@@ -784,7 +784,8 @@ exe "hi! texRefLabel"    . s:fg_yellow .s:bg_back   .s:fmt_none
 "}}}
 " ruby highlighting "{{{
 " ---------------------------------------------------------------------
-exe "hi! rubyDefine"     . s:fg_base1  .s:bg_back   .s:fmt_bold
+" AJZ - NOT DEFAULT --> SWITCHED BG TO CLEAR
+exe "hi! rubyDefine"     . s:fg_base1  .s:bg_none   .s:fmt_none
 "rubyInclude
 "rubySharpBang
 "rubyAccess

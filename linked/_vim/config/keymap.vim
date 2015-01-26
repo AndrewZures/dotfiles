@@ -11,7 +11,6 @@ set hlsearch              "highlight search results
 set number                "add line numbers
 set showmatch             "briefly jump to matching bracket
 set hidden                "<
-set backspace=indent,eol,start
 set ruler                 "<
 set wrap                  "<
 set scrolloff=5
@@ -22,6 +21,7 @@ set ignorecase
 set smartcase
 set colorcolumn=80
 set wildignore+=target
+set backspace=indent,eol,start
 
 set nopaste              "default to no paste mode (helps with indentation)
 set noswapfile           "will not create .swp files
@@ -47,7 +47,6 @@ autocmd FileType ruby compiler ruby
 hi Search    ctermbg=none ctermfg=none cterm=underline
 hi IncSearch ctermbg=none ctermfg=none cterm=bold,underline
 
-
 "editor tab settings
 set textwidth=0         "set tab width
 set nosmartindent       "<
@@ -63,5 +62,3 @@ map <silent> <LocalLeader>nf :NERDTreeFind<CR>
 
 " Control P
 map <Leader>t :CtrlP<CR>
-map <silent> <LocalLeader>fb :CommandTBuffer<CR>
-map <silent> <LocalLeader>fr :CommandTFlush<CR>

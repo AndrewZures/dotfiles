@@ -12,10 +12,10 @@ Plugin 'kien/ctrlp.vim'                     "quick find files
 Plugin 'vim-scripts/tComment'               "commenter
 Plugin 'ervandew/supertab'                  "tab for autocomplete
 
+"might not keep
 Plugin 'vim-scripts/YankRing.vim'           "? yank history
 Plugin 'airblade/vim-gitgutter'             "? vim gitgutter
 Plugin 'sjl/splice.vim'                     "? merge tool
-
 
 "languages
 Plugin 'vim-ruby/vim-ruby'                  "ruby
@@ -24,10 +24,6 @@ Plugin 'kchmck/vim-coffee-script'           "coffeescript
 Plugin 'tpope/vim-fireplace'                "clojure
 Plugin 'elixir-lang/vim-elixir'             "elixir
 Plugin 'dag/vim2hs'                         "haskell
-
-"color schemes
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'chriskempson/tomorrow-theme'
 
 call vundle#end()
 filetype plugin indent on
