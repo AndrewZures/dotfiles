@@ -48,6 +48,7 @@ git_prompt_info() {
 export PROMPT='%m%{$reset_color%}:%{$fg[cyan]%}%c$(git_prompt_info) %{$reset_color%}%% '
 
 # Aliases
+alias vim="mvim -v"
 alias bx="bundle exec"
 alias ls="ls -lh"
 alias rage='bundle exec rake'

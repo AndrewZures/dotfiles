@@ -1,5 +1,7 @@
+let g:solarized_termcolors=256
+
 function! SpecialMix()
-let g:solarized_termcolors=257
+let g:solarized_termcolors=256
 call SolarizedDark()
 call MakeLight()
 endfunction

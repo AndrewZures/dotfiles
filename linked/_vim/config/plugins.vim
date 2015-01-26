@@ -2,18 +2,24 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " basic
-Plugin 'gmarik/vundle'                      "bundle manager
+Plugin 'gmarik/Vundle.vim'                  "bundle manager
 Plugin 'scrooloose/nerdtree'                "file tree
 Plugin 'scrooloose/syntastic'               "general linter
 Plugin 'tpope/vim-surround'                 "quote/paren auto switch
 Plugin 'bling/vim-airline'                  "vim status bar
 Plugin 'tpope/vim-fugitive'                 "git actions in vim
 Plugin 'kien/ctrlp.vim'                     "quick find files
-Plugin 'vim-scripts/tComment' 		          "commenter
+Plugin 'vim-scripts/tComment'               "commenter
 Plugin 'ervandew/supertab'                  "tab for autocomplete
+
+Plugin 'vim-scripts/YankRing.vim'           "? yank history
+Plugin 'airblade/vim-gitgutter'             "? vim gitgutter
+Plugin 'sjl/splice.vim'                     "? merge tool
+
 
 "languages
 Plugin 'vim-ruby/vim-ruby'                  "ruby
+Plugin 'tpope/vim-endwise'                  "ruby autocomplete
 Plugin 'kchmck/vim-coffee-script'           "coffeescript
 Plugin 'tpope/vim-fireplace'                "clojure
 Plugin 'elixir-lang/vim-elixir'             "elixir
@@ -25,6 +31,10 @@ Plugin 'chriskempson/tomorrow-theme'
 
 call vundle#end()
 filetype plugin indent on
+
+"ruby operator coloring
+compiler ruby
+let ruby_operators = 1
 
 "Nerd Tree
 let NERDTreeMinimalUI           = 1

@@ -6,7 +6,6 @@ set winwidth=90
 set winminwidth=15
 
 "general editor settings
-syntax on
 set incsearch             "show currently matching patterns while typing search
 set hlsearch              "highlight search results
 set number                "add line numbers
@@ -29,6 +28,12 @@ set noswapfile           "will not create .swp files
 set nobackup
 set nowritebackup
 
+set nocompatible      " We're running Vim, not Vi!
+syntax on             " Enable syntax highlighting
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
+
 
 set list
 set listchars=tab:\ \ ,trail:·
@@ -37,6 +42,7 @@ set listchars=tab:\ \ ,trail:·
 au BufNewFile,BufRead *.hiccup set filetype=clojure
 au BufNewFile,BufRead *.cljs set filetype=clojure
 au BufNewFile,BufRead *.ejs set filetype=html
+autocmd FileType ruby compiler ruby
 
 hi Search    ctermbg=none ctermfg=none cterm=underline
 hi IncSearch ctermbg=none ctermfg=none cterm=bold,underline
