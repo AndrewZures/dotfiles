@@ -12,6 +12,7 @@ set hlsearch              "highlight search results
 set number                "add line numbers
 set showmatch             "briefly jump to matching bracket
 set hidden                "<
+set backspace=indent,eol,start
 set ruler                 "<
 set wrap                  "<
 set scrolloff=5
@@ -20,13 +21,25 @@ set nocompatible
 set laststatus=2
 set ignorecase
 set smartcase
-set cursorline
 set colorcolumn=80
 set wildignore+=target
-set paste
+
+set nopaste              "default to no paste mode (helps with indentation)
+set noswapfile           "will not create .swp files
+set nobackup
+set nowritebackup
+
 
 set list
 set listchars=tab:\ \ ,trail:·
+
+"apply highlight to additional file types
+au BufNewFile,BufRead *.hiccup set filetype=clojure
+au BufNewFile,BufRead *.cljs set filetype=clojure
+au BufNewFile,BufRead *.ejs set filetype=html
+
+hi Search    ctermbg=none ctermfg=none cterm=underline
+hi IncSearch ctermbg=none ctermfg=none cterm=bold,underline
 
 
 "editor tab settings

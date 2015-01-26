@@ -10,8 +10,10 @@ Plugin 'bling/vim-airline'                  "vim status bar
 Plugin 'tpope/vim-fugitive'                 "git actions in vim
 Plugin 'kien/ctrlp.vim'                     "quick find files
 Plugin 'vim-scripts/tComment' 		          "commenter
+Plugin 'ervandew/supertab'                  "tab for autocomplete
 
 "languages
+Plugin 'vim-ruby/vim-ruby'                  "ruby
 Plugin 'kchmck/vim-coffee-script'           "coffeescript
 Plugin 'tpope/vim-fireplace'                "clojure
 Plugin 'elixir-lang/vim-elixir'             "elixir
@@ -41,7 +43,7 @@ let NERDTreeAutoCenterThreshold = 10
 let NERDTreeIgnore              = ['\.git', '\.pyc', '\.jhw-cache']
 
 " Syntastic
-let g:syntastic_check_on_open=1
+let g:syntastic_check_on_open=0
 let g:syntastic_enable_signs=1
 
 "language specific linters
