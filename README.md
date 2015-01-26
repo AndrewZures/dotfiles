@@ -40,39 +40,38 @@ basically this prompt shows hostname:directory(branch+*?) (where the +*? denote 
 Pretty minimalist.
 
 #### Plugins
-* Command-T
-* AckVim
-* NerdTREE
-* Powerline
-* Fugitive
-* TComment
-* SuperTab
-* A few syntax files, who even cares about those.
+Plugins are managed my Vundle.  The most up-to-date list can be found in linked/config/plugins.vim
 
 #### Bindings In Normal Mode
-* Leader: comma (,) or backslash (\) (I don't pick sides)
-* g/  : ack ( directory search shortcut )
-* g\* : ack current word
-* gn  : next in cabinet
-* gp  : previous in cabinet
-* gq  : close cabinet
-* gc  : Comment line
+* Common NerdTree Bindings
+  * nt - open/close nerdtree
+  * nf - find current file in nerdtree
+* Ggrep movements
+  * gn  : next in cabinet
+  * gp  : previous in cabinet
+  * gq  : close cabinet
+* Standard tcomment bindings
+  * gc or gcc to comment, depending on Mode
 
 Leader Stuff
+* Leader: comma (,) or backslash (\) (I don't pick sides)
+* Leader + t : file finder
+* Leader + w : clear whitespace
+* Leader + space : clear highlight (same as :noh)
 
-* Leader + fs    : Go fullscreen without Lion swoosh effect ( MacVim only )
-* Leader + cw    : Trim trailing whitespace
-* Leader + w     : Also Trims whitespace
-* Leader + t     : Command-T file browser
-* Leader + fr    : Refresh Command-T
-* Leader + fb    : Command-T buffer list
-* Leader + nt    : toggle NERDTree
-* Leader + space : clear search highlight (:noh)
+Custom Stuff
+* g'  : replace word under cursor
+* g/  : hotkey for Ggrep
+* g.  : hotkey for Grep word under cursor
+* ggy : copy selected into mac clipboard
+* ggp : paste clipboard into current buffer
 
-#### Bindings In Insert Mode
-* Ctrl + L    : insert hash-rocket (=>)
-* Ctrl + K    : insert method-missile (->)
-
+* Custom Tab Navigation/Creation
+  * gtn  : create (n)ew tab
+  * gtc  : (c)lose current tab
+  * gto  : (o)nly keep current tab open, close all others
+  * cntrl + k  : next tab
+  * cntrl + j  : previous tab
 
 #### ColorScheme Stuff
 * ClearBackground  : clears vim background, revealing terminal color instead
