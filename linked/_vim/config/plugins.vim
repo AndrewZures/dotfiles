@@ -51,6 +51,7 @@ let NERDTreeIgnore              = ['\.git', '\.pyc', '\.jhw-cache']
 " Syntastic
 let g:syntastic_check_on_open=0
 let g:syntastic_enable_signs=1
+let syntastic_mode_map = { 'passive_filetypes': ['html', 'java'] }
 
 "language specific linters
 let g:syntastic_javascript_checkers =['jshint']
