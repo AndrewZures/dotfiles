@@ -24,13 +24,13 @@ Plugin 'kchmck/vim-coffee-script'           "coffeescript
 Plugin 'tpope/vim-fireplace'                "clojure
 Plugin 'elixir-lang/vim-elixir'             "elixir
 Plugin 'dag/vim2hs'                         "haskell
+Plugin 'fatih/vim-go'                       "go
 
 call vundle#end()
 filetype plugin indent on
 
-"ruby operator coloring
-compiler ruby
-let ruby_operators = 1
+"GitGutter
+let g:gitgutter_enabled = 0
 
 "Nerd Tree
 let NERDTreeMinimalUI           = 1

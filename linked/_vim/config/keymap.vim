@@ -42,7 +42,7 @@ set listchars=tab:\ \ ,trail:·
 au BufNewFile,BufRead *.hiccup set filetype=clojure
 au BufNewFile,BufRead *.cljs set filetype=clojure
 au BufNewFile,BufRead *.ejs set filetype=html
-autocmd FileType ruby compiler ruby
+" autocmd FileType ruby compiler ruby
 
 hi Search    ctermbg=none ctermfg=none cterm=underline
 hi IncSearch ctermbg=none ctermfg=none cterm=bold,underline

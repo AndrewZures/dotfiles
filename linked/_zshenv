@@ -10,6 +10,11 @@ export PATH="${PATH}:/Users/andrewzures/.rvm/gems"
 export PATH="${PATH}:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/andrewzures/.rvm/bin"
 export PATH="${PATH}:/Users/andrewzures/.rvm/gems/ruby-2.0.0-p451/bin"
 
+#adds go to path
+export GOPATH="$HOME/go"
+export PATH="${PATH}:/usr/local/opt/go/libexec/bin"
+export PATH="${PATH}:$GOPATH/bin"
+
 # Env Vars
 export EDITOR=vim
 export CLICOLOR=1
@@ -88,3 +93,10 @@ zle -N modified-kill-word
 export LSCOLORS=''
 
 typeset -U path cdpath fpath
+alias cd=---
+
+echo -ne "\033]0;"$(basename $PWD)"\007"
+---(){
+  \cd $1
+  echo -ne "\033]0;"$(basename $PWD)"\007"
+}
