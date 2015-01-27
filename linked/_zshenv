@@ -90,6 +90,7 @@ modified-kill-word() {
 }
 zle -N modified-kill-word
 
+export SBT_OPTS="-XX:MaxPermSize=1G"
 export LSCOLORS=''
 
 typeset -U path cdpath fpath
