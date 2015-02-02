@@ -25,6 +25,7 @@ Plugin 'tpope/vim-fireplace'                "clojure
 Plugin 'elixir-lang/vim-elixir'             "elixir
 Plugin 'dag/vim2hs'                         "haskell
 Plugin 'fatih/vim-go'                       "go
+Plugin 'hdima/python-syntax'                "python
 
 call vundle#end()
 filetype plugin indent on
