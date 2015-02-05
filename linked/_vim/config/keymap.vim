@@ -62,3 +62,26 @@ map <silent> <LocalLeader>nf :NERDTreeFind<CR>
 
 " Control P
 map <Leader>t :CtrlP<CR>
+
+nnoremap <up> <nop>
+inoremap <up> <nop>
+vnoremap <up> <nop>
+
+nnoremap <down> <nop>
+inoremap <down> <nop>
+vnoremap <down> <nop>
+
+nnoremap <left> <nop>
+inoremap <left> <nop>
+vnoremap <left> <nop>
+
+nnoremap <right> <nop>
+inoremap <right> <nop>
+vnoremap <right> <nop>
+
+nnoremap <esc> <nop>
+inoremap <esc> <nop>
+vnoremap <esc> <nop>
+
+
+
