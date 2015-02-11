@@ -34,6 +34,11 @@ filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
+"disable esc key -  use cntrl-c instead
+inoremap <esc> <nop>
+
+"use ; instead of : for command
+nnoremap ; :
 
 set list
 set listchars=tab:\ \ ,trail:·

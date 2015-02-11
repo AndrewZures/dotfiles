@@ -1,6 +1,7 @@
 let g:solarized_termcolors=256
 
 function! SpecialMix()
+"set your iterm background to solarized dark for this to work
 let g:solarized_termcolors=256
 call SolarizedDark()
 call MakeLight()
