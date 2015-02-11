@@ -35,6 +35,12 @@ setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share 
 setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
 setopt HIST_REDUCE_BLANKS
 
+export HISTCONTROL=erasedups  # Ignore duplicate entries in history
+export HISTFILE=~/.histfile
+export HISTSIZE=10000         # Increases size of history
+export SAVEHIST=10000
+export HISTIGNORE="&:ls:ll:la:l.:pwd:exit:clear:clr:[bf]g"
+
 #Completion
 zstyle ':completion::complete:*' use-cache 1
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # case insensitive completion
