@@ -40,6 +40,12 @@ inoremap <esc> <nop>
 "use ; instead of : for command
 nnoremap ; :
 
+"disable arrow keys
+nnoremap <right> <nop>
+nnoremap <left> <nop>
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+
 set list
 set listchars=tab:\ \ ,trail:·
 
