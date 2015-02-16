@@ -10,10 +10,14 @@
   amend = commit --amend
 
   br = branch
+  brv = branch -v
+  brd = branch -D
+
   ci = commit
   cm = commit -m
   cma = commit -am
   co = checkout
+  cob = checkout -B
   rh = reset HEAD
 
   di = diff
