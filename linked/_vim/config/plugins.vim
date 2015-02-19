@@ -3,7 +3,7 @@ call vundle#begin()
 
 " basic
 Plugin 'gmarik/Vundle.vim'                  "bundle manager
-Plugin 'scrooloose/nerdtree'                "file tree
+Plugin 'andrewzures/nerdtree'                "file tree with my custom tab settings
 Plugin 'scrooloose/syntastic'               "general linter
 Plugin 'tpope/vim-surround'                 "quote/paren auto switch
 Plugin 'bling/vim-airline'                  "vim status bar
@@ -13,7 +13,6 @@ Plugin 'vim-scripts/tComment'               "commenter
 Plugin 'ervandew/supertab'                  "tab for autocomplete
 
 "might not keep
-Plugin 'vim-scripts/YankRing.vim'           "? yank history
 Plugin 'airblade/vim-gitgutter'             "? vim gitgutter
 Plugin 'sjl/splice.vim'                     "? merge tool
 
