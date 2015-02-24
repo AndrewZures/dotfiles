@@ -19,6 +19,7 @@
   co = checkout
   cob = checkout -B
   rh = reset HEAD
+  last = log -1 HEAD
 
   di = diff
   dc = diff --cached
