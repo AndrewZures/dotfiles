@@ -65,11 +65,9 @@ alias gmacs='open . -a emacs'
 alias gemreset='rvm gemset --force empty && gem install bundler && bundle'
 alias iphonesim='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app'
 
-alias 8th="cd ~/Desktop/8thlight"
 alias desk='cd ~/Desktop'
-alias engine="cd ~/Desktop/8thlight/projects/health_engine"
-alias p="cd ~/Desktop/8thlight/projects"
-alias mp="cd ~/Desktop/8thlight/my_projects"
+alias p="cd ~/Desktop/projects"
+alias mp="cd ~/Desktop/my_projects"
 
 # Bindings
 bindkey -M viins '^R' history-incremental-pattern-search-backward
