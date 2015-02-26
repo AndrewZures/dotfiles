@@ -6,9 +6,6 @@ colors
 #Path
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH="${PATH}:/usr/local/share/npm/bin"
-export PATH="${PATH}:/Users/andrewzures/.rvm/gems"
-export PATH="${PATH}:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/andrewzures/.rvm/bin"
-export PATH="${PATH}:/Users/andrewzures/.rvm/gems/ruby-2.0.0-p451/bin"
 
 #adds go to path
 export GOPATH="$HOME/go"
@@ -58,16 +55,17 @@ export PROMPT='%m%{$reset_color%}:%{$fg[cyan]%}%c$(git_prompt_info) %{$reset_col
 
 # Aliases
 alias vim="mvim -v"
-alias bx="bundle exec"
+alias be="bundle exec"
 alias ls="ls -lh"
 alias rage='bundle exec rake'
 alias gmacs='open . -a emacs'
-alias gemreset='rvm gemset --force empty && gem install bundler && bundle'
 alias iphonesim='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app'
+alias rake="bundle exec rake"
 
 alias desk='cd ~/Desktop'
-alias p="cd ~/Desktop/projects"
+alias p="cd ~/Projects"
 alias mp="cd ~/Desktop/my_projects"
+alias hir="cd ~/Projects/Hireology"
 
 # Bindings
 bindkey -M viins '^R' history-incremental-pattern-search-backward
@@ -94,3 +92,6 @@ zle -N modified-kill-word
 
 export SBT_OPTS="-XX:MaxPermSize=1G"
 export LSCOLORS=''
+
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
