@@ -63,8 +63,9 @@ Custom Stuff
 * g'  : replace word under cursor
 * g/  : hotkey for Ggrep
 * g.  : hotkey for Grep word under cursor
-* ggy : copy selected into mac clipboard
-* ggp : paste clipboard into current buffer
+* (only for specific vim distros --> I use macvim in terminal using 'mvim -v'
+  * ggy : copy selected into mac clipboard
+  * ggp : paste clipboard into current buffer
 
 * Custom Tab Navigation/Creation
   * gtn  : create (n)ew tab
