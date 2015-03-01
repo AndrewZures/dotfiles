@@ -13,6 +13,9 @@ brew cask install intellij-idea-ce
 brew cask install mysqlworkbench
 brew cask install atom
 
+#languages
+brew cask install java
+
 #communication
 brew cask install hipchat
 brew cask install skype

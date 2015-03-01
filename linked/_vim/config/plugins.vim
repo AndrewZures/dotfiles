@@ -21,6 +21,9 @@ Plugin 'vim-ruby/vim-ruby'                  "ruby
 Plugin 'tpope/vim-endwise'                  "ruby autocomplete
 Plugin 'kchmck/vim-coffee-script'           "coffeescript
 Plugin 'tpope/vim-fireplace'                "clojure
+Plugin 'guns/vim-clojure-static'            "clojure highlighting
+Plugin 'guns/vim-clojure-highlight'         "clojure extended highlighting
+Plugin 'kien/rainbow_parentheses.vim'       "rainbow parens for clojure
 Plugin 'elixir-lang/vim-elixir'             "elixir
 Plugin 'dag/vim2hs'                         "haskell
 Plugin 'fatih/vim-go'                       "go
