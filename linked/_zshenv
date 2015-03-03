@@ -60,7 +60,9 @@ alias ls="ls -lh"
 alias rage='bundle exec rake'
 alias gmacs='open . -a emacs'
 alias iphonesim='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app'
-alias rake="bundle exec rake"
+# alias rake="bundle exec rake"
+# alias rails="bundle exec rails"
+# alias cuke="bundle exec cucumber"
 
 alias desk='cd ~/Desktop'
 alias p="cd ~/Projects"

@@ -18,6 +18,8 @@ Plugin 'sjl/splice.vim'                     "? merge tool
 
 "languages
 Plugin 'vim-ruby/vim-ruby'                  "ruby
+Plugin 'tpope/vim-cucumber'                 "cucumber syntax highlight
+Plugin 'tpope/vim-rails'                    "rails stuff
 Plugin 'tpope/vim-endwise'                  "ruby autocomplete
 Plugin 'kchmck/vim-coffee-script'           "coffeescript
 Plugin 'tpope/vim-fireplace'                "clojure
