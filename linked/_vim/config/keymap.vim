@@ -12,7 +12,7 @@ set number                "add line numbers
 set showmatch             "briefly jump to matching bracket
 set hidden                "<
 set ruler                 "<
-set wrap                  "<
+set nowrap                "< won't wrap lines
 set scrolloff=5
 set nofoldenable
 set nocompatible
@@ -34,11 +34,8 @@ filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
-"disable esc key -  use cntrl-c instead
+" disable esc key -  use cntrl-c instead
 inoremap <esc> <nop>
-
-"use ; instead of : for command
-nnoremap ; :
 
 "disable arrow keys
 nnoremap <right> <nop>

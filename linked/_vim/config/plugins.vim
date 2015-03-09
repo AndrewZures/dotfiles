@@ -17,10 +17,11 @@ Plugin 'airblade/vim-gitgutter'             "? vim gitgutter
 Plugin 'sjl/splice.vim'                     "? merge tool
 
 "languages
-Plugin 'vim-ruby/vim-ruby'                  "ruby
+" Plugin 'vim-ruby/vim-ruby'                  "ruby
 Plugin 'tpope/vim-cucumber'                 "cucumber syntax highlight
 Plugin 'tpope/vim-rails'                    "rails stuff
 Plugin 'tpope/vim-endwise'                  "ruby autocomplete
+Plugin 'skalnik/vim-vroom'                  "in vim testing
 Plugin 'kchmck/vim-coffee-script'           "coffeescript
 Plugin 'tpope/vim-fireplace'                "clojure
 Plugin 'guns/vim-clojure-static'            "clojure highlighting

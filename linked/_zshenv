@@ -5,7 +5,7 @@ colors
 
 #Path
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH="${PATH}:/usr/local/share/npm/bin"
+export PATH="${PATH}:/usr/local/share/npm/bin:/usr/local/bin"
 
 #adds go to path
 export GOPATH="$HOME/go"
