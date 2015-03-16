@@ -23,6 +23,7 @@ Plugin 'tpope/vim-rails'                    "rails stuff
 Plugin 'tpope/vim-endwise'                  "ruby autocomplete
 Plugin 'skalnik/vim-vroom'                  "in vim testing
 Plugin 'kchmck/vim-coffee-script'           "coffeescript
+Plugin 'marijnh/tern_for_vim'               "javascript analyzer
 Plugin 'tpope/vim-fireplace'                "clojure
 Plugin 'guns/vim-clojure-static'            "clojure highlighting
 Plugin 'guns/vim-clojure-highlight'         "clojure extended highlighting

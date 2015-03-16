@@ -34,7 +34,7 @@ class Installer
   end
 
   def confirm
-    CLI.out "well, allright! you ARE aware this will delete your existing dotfiles in your home folder?" 
+    CLI.out "well, allright! you ARE aware this will delete your existing dotfiles in your home folder?"
     CLI.out "so seriously, should I continue? y/n"
 
     if Options.confirm

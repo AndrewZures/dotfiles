@@ -60,14 +60,14 @@ alias ls="ls -lh"
 alias rage='bundle exec rake'
 alias gmacs='open . -a emacs'
 alias iphonesim='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app'
-# alias rake="bundle exec rake"
-# alias rails="bundle exec rails"
-# alias cuke="bundle exec cucumber"
+alias rake="bundle exec rake"
+alias rails="bundle exec rails"
+alias cuke="bundle exec cucumber"
 
 alias desk='cd ~/Desktop'
 alias p="cd ~/Projects"
 alias mp="cd ~/Desktop/my_projects"
-alias hir="cd ~/Projects/Hireology"
+alias hire="cd ~/Projects/Hireology/Code/app"
 
 # Bindings
 bindkey -M viins '^R' history-incremental-pattern-search-backward

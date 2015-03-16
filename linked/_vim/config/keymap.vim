@@ -35,7 +35,7 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
 " disable esc key -  use cntrl-c instead
-inoremap <esc> <nop>
+" inoremap <esc> <nop>
 
 "disable arrow keys
 nnoremap <right> <nop>
