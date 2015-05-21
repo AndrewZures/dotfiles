@@ -53,22 +53,23 @@ let NERDTreeIgnore              = ['\.git', '\.pyc', '\.jhw-cache']
 " Syntastic
 let g:syntastic_check_on_open=0
 let g:syntastic_enable_signs=1
-
 let syntastic_mode_map = { 'passive_filetypes': ['html', 'java'] }
-
 
 "language specific linters
 let g:syntastic_javascript_checkers =['jshint']
 let g:syntastic_javascript_jshint_conf = $HOME . '/.jshintrc'
 
+"cntrl P ignore list
+let g:ctrlp_custom_ignore = {
+      \ 'dir': 'node_modules\|git\|db/data\|tmp\|vendor\|public',
+      \ 'file': '.zip\|.png\|.gif\|.jpeg\|.jpg\|.gz\|.tar\|.dmg',
+      \ }
+
 "Airline
 let g:airline_powerline_fonts=1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#tabline#show_tab_nr = 0
-
-"no branch detected message
 let g:airline#extensions#branch#empty_message = 'nobranch'
-
 "default section layout abc on left, xyz on right
 let g:airline#extensions#default#layout = [
     \ [ 'a', 'b', 'c' ],
