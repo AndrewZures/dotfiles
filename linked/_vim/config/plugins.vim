@@ -12,10 +12,6 @@ Plugin 'kien/ctrlp.vim'                     "quick find files
 Plugin 'vim-scripts/tComment'               "commenter
 Plugin 'ervandew/supertab'                  "tab for autocomplete
 
-"might not keep
-Plugin 'airblade/vim-gitgutter'             "? vim gitgutter
-Plugin 'sjl/splice.vim'                     "? merge tool
-
 "languages
 Plugin 'tpope/vim-cucumber'                 "cucumber syntax highlight
 Plugin 'tpope/vim-rails'                    "rails stuff
@@ -38,9 +34,6 @@ Plugin 'jcfaria/Vim-R-plugin'               "R
 call vundle#end()
 filetype plugin indent on
 
-"GitGutter
-let g:gitgutter_enabled = 0
-
 "Nerd Tree
 let NERDTreeMinimalUI           = 1
 let NERDTreeQuitOnOpen          = 0
@@ -60,13 +53,24 @@ let NERDTreeIgnore              = ['\.git', '\.pyc', '\.jhw-cache']
 " Syntastic
 let g:syntastic_check_on_open=0
 let g:syntastic_enable_signs=1
+
 let syntastic_mode_map = { 'passive_filetypes': ['html', 'java'] }
+
 
 "language specific linters
 let g:syntastic_javascript_checkers =['jshint']
 let g:syntastic_javascript_jshint_conf = $HOME . '/.jshintrc'
 
-set guifont=Inconsolata\ for\ Powerline:h15
+"Airline
 let g:airline_powerline_fonts=1
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#tabline#show_tab_nr = 0
 
-" let g:airline_powerline_fonts = 1
+"no branch detected message
+let g:airline#extensions#branch#empty_message = 'nobranch'
+
+"default section layout abc on left, xyz on right
+let g:airline#extensions#default#layout = [
+    \ [ 'a', 'b', 'c' ],
+    \ [ 'z', 'warning' ]
+    \ ]
