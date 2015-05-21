@@ -62,7 +62,12 @@ alias gmacs='open . -a emacs'
 alias iphonesim='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app'
 alias rake="bundle exec rake"
 alias rails="bundle exec rails"
-alias cuke="bundle exec cucumber"
+alias cucumber="bundle exec cucumber"
+alias raw-rails="rails"
+alias rebuild-db="RAILS_ENV=test bundle exec make build-db"
+alias runt-cukes="rebuild-db && bundle exec make run-cukes"
+alias run-specs="rebuild-db && bundle exec make run-specs"
+alias js-specs="RAILS_ENV=test be rake spec:javascript"
 
 alias desk='cd ~/Desktop'
 alias p="cd ~/Projects"

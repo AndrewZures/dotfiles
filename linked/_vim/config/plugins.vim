@@ -6,7 +6,7 @@ Plugin 'gmarik/Vundle.vim'                  "bundle manager
 Plugin 'andrewzures/nerdtree'                "file tree with my custom tab settings
 Plugin 'scrooloose/syntastic'               "general linter
 Plugin 'tpope/vim-surround'                 "quote/paren auto switch
-Plugin 'bling/vim-airline'                  "vim status bar
+Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'                 "git actions in vim
 Plugin 'kien/ctrlp.vim'                     "quick find files
 Plugin 'vim-scripts/tComment'               "commenter
@@ -17,12 +17,13 @@ Plugin 'airblade/vim-gitgutter'             "? vim gitgutter
 Plugin 'sjl/splice.vim'                     "? merge tool
 
 "languages
-" Plugin 'vim-ruby/vim-ruby'                  "ruby
 Plugin 'tpope/vim-cucumber'                 "cucumber syntax highlight
 Plugin 'tpope/vim-rails'                    "rails stuff
 Plugin 'tpope/vim-endwise'                  "ruby autocomplete
 Plugin 'skalnik/vim-vroom'                  "in vim testing
 Plugin 'kchmck/vim-coffee-script'           "coffeescript
+Plugin 'mxw/vim-jsx'                        "jsx
+Plugin 'mtscout6/vim-cjsx'                  "cjsx highlighting
 Plugin 'marijnh/tern_for_vim'               "javascript analyzer
 Plugin 'tpope/vim-fireplace'                "clojure
 Plugin 'guns/vim-clojure-static'            "clojure highlighting
@@ -32,6 +33,7 @@ Plugin 'elixir-lang/vim-elixir'             "elixir
 Plugin 'dag/vim2hs'                         "haskell
 Plugin 'fatih/vim-go'                       "go
 Plugin 'hdima/python-syntax'                "python
+Plugin 'jcfaria/Vim-R-plugin'               "R
 
 call vundle#end()
 filetype plugin indent on
@@ -62,3 +64,9 @@ let syntastic_mode_map = { 'passive_filetypes': ['html', 'java'] }
 
 "language specific linters
 let g:syntastic_javascript_checkers =['jshint']
+let g:syntastic_javascript_jshint_conf = $HOME . '/.jshintrc'
+
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:airline_powerline_fonts=1
+
+" let g:airline_powerline_fonts = 1
