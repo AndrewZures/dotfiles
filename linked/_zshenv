@@ -57,12 +57,11 @@ export PROMPT='%m%{$reset_color%}:%{$fg[cyan]%}%c$(git_prompt_info) %{$reset_col
 alias vim="mvim -v"
 alias be="bundle exec"
 alias ls="ls -lh"
-alias rage='bundle exec rake'
-alias gmacs='open . -a emacs'
 alias iphonesim='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app'
 alias rake="bundle exec rake"
 alias rails="bundle exec rails"
 alias cucumber="bundle exec cucumber"
+alias rspec="bundle exec rspec"
 alias raw-rails="rails"
 alias rebuild-db="RAILS_ENV=test bundle exec make build-db"
 alias runt-cukes="rebuild-db && bundle exec make run-cukes"

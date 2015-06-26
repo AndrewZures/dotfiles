@@ -50,14 +50,16 @@ let NERDTreeAutoCenter          = 1
 let NERDTreeAutoCenterThreshold = 10
 let NERDTreeIgnore              = ['\.git', '\.pyc', '\.jhw-cache']
 
+autocmd QuickFixCmdPost *grep* cwindow
+
 " Syntastic
 let g:syntastic_check_on_open=0
 let g:syntastic_enable_signs=1
 let syntastic_mode_map = { 'passive_filetypes': ['html', 'java'] }
 
 "language specific linters
-let g:syntastic_javascript_checkers =['jshint']
-let g:syntastic_javascript_jshint_conf = $HOME . '/.jshintrc'
+let g:syntastic_javascript_checkers =['jsxhint']
+let g:syntastic_javascript_jshint_args = '--config /Users/andrewzures/.jshintrc'
 
 "cntrl P ignore list
 let g:ctrlp_custom_ignore = {
@@ -72,6 +74,6 @@ let g:airline#extensions#tabline#show_tab_nr = 0
 let g:airline#extensions#branch#empty_message = 'nobranch'
 "default section layout abc on left, xyz on right
 let g:airline#extensions#default#layout = [
-    \ [ 'a', 'b', 'c' ],
+    \ [ 'a', 'c' ],
     \ [ 'z', 'warning' ]
     \ ]
