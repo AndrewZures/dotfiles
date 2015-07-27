@@ -63,9 +63,10 @@ alias rails="bundle exec rails"
 alias cucumber="bundle exec cucumber"
 alias rspec="bundle exec rspec"
 alias raw-rails="rails"
-alias rebuild-db="RAILS_ENV=test bundle exec make build-db"
-alias runt-cukes="rebuild-db && bundle exec make run-cukes"
-alias run-specs="rebuild-db && bundle exec make run-specs"
+alias rebuild-prod-db="RAILS_ENV=production bundle exec make build-db"
+alias rebuild-test-db="RAILS_ENV=test bundle exec make build-db"
+alias runt-cukes="rebuild-test-db && bundle exec make run-cukes"
+alias run-specs="rebuild-test-db && bundle exec make run-specs"
 alias js-specs="RAILS_ENV=test be rake spec:javascript"
 
 alias desk='cd ~/Desktop'
