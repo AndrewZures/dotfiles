@@ -1,6 +1,6 @@
 [user]
 	name = Andrew Zures
-	email = azures@8thlight.com
+	email = azures@hireology.com
 
 [color]
   ui = auto
@@ -30,6 +30,7 @@
   fml = !git aa && git reset --hard
   pop = !git stash pop
   subs = submodule update --init --recursive
+  reset-soft = reset --soft HEAD~1
   checkpoint = commit -m "checkpoint"
   lg = "!source ~/.githelpers && pretty_git_log"
 
@@ -46,3 +47,7 @@
 	smudge = git-media-smudge %f
 [core]
 	editor = vim
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true

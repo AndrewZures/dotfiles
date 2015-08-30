@@ -12,6 +12,7 @@ brew install mysql
 brew install postgresql
 brew install redis
 brew install sqlite
+brew install pgcli
 
 #language specific
 brew install phantomjs

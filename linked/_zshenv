@@ -100,5 +100,9 @@ zle -N modified-kill-word
 export SBT_OPTS="-XX:MaxPermSize=1G"
 export LSCOLORS=''
 
+#ruby version manager
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# node version manager
+. ~/.nvm/nvm.sh
