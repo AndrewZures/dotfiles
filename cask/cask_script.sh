@@ -26,7 +26,6 @@ brew cask install alfred
 brew cask install 1password
 brew cask install spectacle
 brew cask install evernote
-brew cask install dash
 
 #music
 brew cask install spotify
