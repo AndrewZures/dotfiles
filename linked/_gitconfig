@@ -15,7 +15,7 @@
 
   ci = commit
   cm = commit -m
-  cma = commit -am
+  cma = !git aa && git commit -m
   co = checkout
   cob = checkout -B
   rh = reset HEAD
