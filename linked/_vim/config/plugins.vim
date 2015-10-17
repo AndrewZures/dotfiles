@@ -27,6 +27,7 @@ Plugin 'tpope/vim-fireplace'                "clojure
 Plugin 'guns/vim-clojure-static'            "clojure highlighting
 Plugin 'guns/vim-clojure-highlight'         "clojure extended highlighting
 Plugin 'kien/rainbow_parentheses.vim'       "rainbow parens for clojure
+Plugin 'vim-erlang/vim-erlang-runtime'      "erlang
 Plugin 'elixir-lang/vim-elixir'             "elixir
 Plugin 'dag/vim2hs'                         "haskell
 Plugin 'fatih/vim-go'                       "go
