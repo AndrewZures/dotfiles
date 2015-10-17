@@ -51,7 +51,8 @@ git_prompt_info() {
 }
 
 # Prompt
-export PROMPT='%m%{$reset_color%}:%{$fg[cyan]%}%c$(git_prompt_info) %{$reset_color%}%% '
+# export PROMPT='%m%{$reset_color%}:%{$fg[cyan]%}%c$(git_prompt_info) %{$reset_color%}%% '
+export PROMPT='λ %{$fg[cyan]%}%c$(git_prompt_info) %{$reset_color%}% ➠ '
 
 # Aliases
 alias vim="mvim -v"
