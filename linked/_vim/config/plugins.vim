@@ -14,26 +14,26 @@ Plugin 'ervandew/supertab'                  "tab for autocomplete
 " Emmett Needed
 
 "languages
-Plugin 'tpope/vim-cucumber'                 "cucumber syntax highlight
-Plugin 'tpope/vim-rails'                    "rails stuff
+" Plugin 'tpope/vim-cucumber'                 "cucumber syntax highlight
+" Plugin 'tpope/vim-rails'                    "rails stuff
 Plugin 'tpope/vim-endwise'                  "ruby autocomplete
 Plugin 'skalnik/vim-vroom'                  "in vim testing
 Plugin 'kchmck/vim-coffee-script'           "coffeescript
 Plugin 'pangloss/vim-javascript'            "javascript
 Plugin 'mxw/vim-jsx'                        "jsx
-Plugin 'mtscout6/vim-cjsx'                  "cjsx highlighting
-Plugin 'marijnh/tern_for_vim'               "javascript analyzer
+" Plugin 'mtscout6/vim-cjsx'                  "cjsx highlighting
+" Plugin 'marijnh/tern_for_vim'               "javascript analyzer
 Plugin 'tpope/vim-fireplace'                "clojure
-Plugin 'guns/vim-clojure-static'            "clojure highlighting
-Plugin 'guns/vim-clojure-highlight'         "clojure extended highlighting
+" Plugin 'guns/vim-clojure-static'            "clojure highlighting
+" Plugin 'guns/vim-clojure-highlight'         "clojure extended highlighting
 Plugin 'kien/rainbow_parentheses.vim'       "rainbow parens for clojure
-Plugin 'vim-erlang/vim-erlang-runtime'      "erlang
-Plugin 'elixir-lang/vim-elixir'             "elixir
+" Plugin 'vim-erlang/vim-erlang-runtime'      "erlang
+" Plugin 'elixir-lang/vim-elixir'             "elixir
 Plugin 'dag/vim2hs'                         "haskell
-Plugin 'fatih/vim-go'                       "go
-Plugin 'hdima/python-syntax'                "python
-Plugin 'jcfaria/Vim-R-plugin'               "R
-Plugin 'lambdatoast/elm.vim'                "elm
+" Plugin 'fatih/vim-go'                       "go
+" Plugin 'hdima/python-syntax'                "python
+" Plugin 'jcfaria/Vim-R-plugin'               "R
+" Plugin 'lambdatoast/elm.vim'                "elm
 
 call vundle#end()
 filetype plugin indent on
