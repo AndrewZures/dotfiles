@@ -6,6 +6,7 @@ brew install macvim
 brew install tmux
 brew install tmate
 brew install reattach-to-user-namespace
+brew install the_silver_searcher
 
 #db stuff
 brew install mysql
