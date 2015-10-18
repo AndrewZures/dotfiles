@@ -7,7 +7,7 @@ noremap <silent> <leader><space> :noh<cr>:call clearmatches()<cr>
 " custom copy/paste to clipboard
 nmap ggy "+yy
 vmap ggy "+y<CR>
-" nmap ggp "+p<CR>
+nmap ggp "+p<CR>
 
 " custom tab settings
 nmap gtn :tabnew<CR>
@@ -16,16 +16,16 @@ nmap gto :tabonly<CR>
 map <C-H> :tabp<CR>
 map <C-L> :tabn<CR>
 
-" custom Ggrep move-thru settings
+" custom move-thru settings
 nmap gn :cnext<CR>
 nmap gp :cprev<CR>
 nmap gq :ccl<CR>
 
 " ggrep hotkey
-nmap g/ :Ggrep<space>
+nmap g/ :Ag<space>
 
 " ggrep word under cursor
-nmap g. :Ggrep <C-R><C-W>
+nmap g. :Ag <C-R><C-W>
 
 " replace word under cursor
 nmap g' :%s/<C-R><C-W>/
@@ -52,9 +52,19 @@ function MoveCurrentWindowToTab(tab_number)
   end
 endfunction
 
+nmap ga @=Alternative()<CR>
 
-function Hello()
+function Alternative()
   let a:current_file = expand("%")
+  let a:spec_match = match(a:current_file, "_spec.rb")
+  if a:spec_match != -1
+    call OpenSrcFile(a:current_file)
+  else
+    call OpenSpecFile(a:current_file)
+  endif
+endfunction
+
+function OpenSpecFile(current_file)
   let a:spec_file = substitute(a:current_file, "app", "spec", "")
   let a:spec_file = substitute(a:spec_file, ".rb", "_spec.rb", "")
   let a:spec_no_rails_file = substitute(a:current_file, "app", "spec_no_rails", "")
@@ -66,11 +76,12 @@ function Hello()
   elseif filereadable(a:spec_nr_file)
     exe "vert botright split"
     exe "e ".a:spec_nr_file
+  else
+    echo "no spec file found"
   endif
 endfunction
 
-function Howdy()
-  let a:current_file = expand("%")
+function OpenSrcFile(current_file)
   let a:src_file = substitute(a:current_file, "_spec.rb", ".rb", "")
   let a:src_file = substitute(a:src_file, "spec_no_rails", "app", "")
   let a:src_file = substitute(a:src_file, "spec", "app", "")
@@ -78,5 +89,7 @@ function Howdy()
     exe "vert botright split"
     exe "e ".a:src_file
     exe "normal \<C-W>x"
+  else
+    echo "no src file found"
   endif
 endfunction

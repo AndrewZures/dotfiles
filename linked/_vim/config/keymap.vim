@@ -63,10 +63,14 @@ set shiftwidth=2        "<
 set softtabstop=2       "<
 set expandtab           "<
 
+nmap <C-C> <nop>
+
 
 " NerdTree
 map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
 map <silent> <LocalLeader>nf :NERDTreeFind<CR>
 
 " Control P
-map <Leader>t :CtrlP<CR>
+"
+" Clear control-p cache and start control-p
+nmap <Leader><C-P> :CtrlPClearCache<CR>:CtrlP<CR>
