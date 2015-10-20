@@ -71,6 +71,7 @@ map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
 map <silent> <LocalLeader>nf :NERDTreeFind<CR>
 
 " Control P
-"
+" map leader-t to ctrl-p (cmd-t holdover)
+map <Leader>t :CtrlP<CR>
 " Clear control-p cache and start control-p
 nmap <Leader><C-P> :CtrlPClearCache<CR>:CtrlP<CR>
