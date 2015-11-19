@@ -34,6 +34,9 @@ filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
+" disables weird issues in some situation when using ctrl-c instead of esc
+nmap <C-C> <nop>
+
 " disable esc key -  use cntrl-c instead
 " inoremap <esc> <nop>
 
@@ -62,9 +65,6 @@ set tabstop=2           "<
 set shiftwidth=2        "<
 set softtabstop=2       "<
 set expandtab           "<
-
-nmap <C-C> <nop>
-
 
 " NerdTree
 map <silent> <LocalLeader>nt :NERDTreeToggle<CR>

@@ -5,16 +5,19 @@ nnoremap <leader>w mz:%s/\s\+$//<cr>:let @/=''<cr>`z
 noremap <silent> <leader><space> :noh<cr>:call clearmatches()<cr>
 
 " custom copy/paste to clipboard
-nmap ggy "+yy
-vmap ggy "+y<CR>
-nmap ggp "+p<CR>
+nmap gfy "+yy
+vmap gfy "+y<CR>
+nmap gfp "+p<CR>
 
 " custom tab settings
 nmap gtn :tabnew<CR>
 nmap gtc :tabclose<CR>
 nmap gto :tabonly<CR>
-map <C-H> :tabp<CR>
-map <C-L> :tabn<CR>
+nmap <C-e>h :tabp<CR>
+nmap <C-e>l :tabn<CR>
+nmap <C-e><C-h> :tabp<CR>
+nmap <C-e><C-l> :tabn<CR>
+nmap <C-e> <nop>
 
 " custom move-thru settings
 nmap gn :cnext<CR>
@@ -30,13 +33,22 @@ nmap g. :Ag <C-R><C-W>
 " replace word under cursor
 nmap g' :%s/<C-R><C-W>/
 
+" format entire file
+nmap gfo mzgg=G`z
 
-"lulz
-nmap ggt1 @=MoveCurrentWindowToTab(1)<CR>
-nmap ggt2 @=MoveCurrentWindowToTab(2)<CR>
-nmap ggt3 @=MoveCurrentWindowToTab(3)<CR>
-nmap ggt4 @=MoveCurrentWindowToTab(4)<CR>
-nmap ggt5 @=MoveCurrentWindowToTab(5)<CR>
+"hard coding 1 indexed tab moving
+nmap gtm1 :tabm0<CR>
+nmap gtm2 :tabm1<CR>
+nmap gtm3 :tabm2<CR>
+nmap gtm4 :tabm3<CR>
+nmap gtm5 :tabm4<CR>
+
+"hard coding args for now
+nmap gtt1 @=MoveCurrentWindowToTab(1)<CR>
+nmap gtt2 @=MoveCurrentWindowToTab(2)<CR>
+nmap gtt3 @=MoveCurrentWindowToTab(3)<CR>
+nmap gtt4 @=MoveCurrentWindowToTab(4)<CR>
+nmap gtt5 @=MoveCurrentWindowToTab(5)<CR>
 
 "moves current window to another (existing) tab
 function MoveCurrentWindowToTab(tab_number)
@@ -52,6 +64,7 @@ function MoveCurrentWindowToTab(tab_number)
   end
 endfunction
 
+"custom movement to related spec/src file
 nmap ga @=Alternative()<CR>
 
 function Alternative()

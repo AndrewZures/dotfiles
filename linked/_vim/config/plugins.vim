@@ -57,13 +57,16 @@ let NERDTreeIgnore              = ['\.git', '\.pyc', '\.jhw-cache']
 
 autocmd QuickFixCmdPost *grep* cwindow
 
+"extends jsx highlighting to .js files
+let g:jsx_ext_required = 0
+
 " Syntastic
 let g:syntastic_check_on_open=0
 let g:syntastic_enable_signs=1
 let syntastic_mode_map = { 'passive_filetypes': ['html', 'java'] }
 
 "language specific linters
-let g:syntastic_javascript_checkers =['jsxhint']
+let g:syntastic_javascript_checkers =['eslint']
 let g:syntastic_javascript_jshint_args = '--config /Users/andrewzures/.jshintrc'
 
 "cntrl P ignore list

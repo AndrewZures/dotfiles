@@ -101,6 +101,9 @@ zle -N modified-kill-word
 export SBT_OPTS="-XX:MaxPermSize=1G"
 export LSCOLORS=''
 
+#Android SDK
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
 #ruby version manager
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
