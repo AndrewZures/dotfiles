@@ -33,6 +33,7 @@
   reset-soft = reset --soft HEAD~1
   checkpoint = commit -m "checkpoint"
   lg = "!source ~/.githelpers && pretty_git_log"
+  rl = reflog -7
 
 [push]
   default = current
