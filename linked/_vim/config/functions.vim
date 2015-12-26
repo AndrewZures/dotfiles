@@ -13,11 +13,19 @@ nmap gfp "+p<CR>
 nmap gtn :tabnew<CR>
 nmap gtc :tabclose<CR>
 nmap gto :tabonly<CR>
+
+"use Ctrl-e to move tabs
 nmap <C-e>h :tabp<CR>
 nmap <C-e>l :tabn<CR>
 nmap <C-e><C-h> :tabp<CR>
 nmap <C-e><C-l> :tabn<CR>
+
+"disable standard Ctrl-e actions
 nmap <C-e> <nop>
+
+"disable standard Ctrl-w c, which closes current tab
+nmap <C-w>c <nop>
+nmap <C-w><C-c> <nop>
 
 " custom move-thru settings
 nmap gn :cnext<CR>
