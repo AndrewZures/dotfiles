@@ -33,7 +33,7 @@ Plugin 'dag/vim2hs'                         "haskell
 " Plugin 'fatih/vim-go'                       "go
 " Plugin 'hdima/python-syntax'                "python
 " Plugin 'jcfaria/Vim-R-plugin'               "R
-" Plugin 'lambdatoast/elm.vim'                "elm
+Plugin 'lambdatoast/elm.vim'                "elm
 Plugin 'rking/ag.vim'
 
 call vundle#end()
