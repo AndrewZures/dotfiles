@@ -14,27 +14,28 @@ Plugin 'ervandew/supertab'                  "tab for autocomplete
 " Emmett Needed
 
 "languages
-" Plugin 'tpope/vim-cucumber'                 "cucumber syntax highlight
-" Plugin 'tpope/vim-rails'                    "rails stuff
 Plugin 'tpope/vim-endwise'                  "ruby autocomplete
 Plugin 'skalnik/vim-vroom'                  "in vim testing
 Plugin 'kchmck/vim-coffee-script'           "coffeescript
 Plugin 'pangloss/vim-javascript'            "javascript
 Plugin 'mxw/vim-jsx'                        "jsx
+Plugin 'tpope/vim-fireplace'                "clojure
+Plugin 'kien/rainbow_parentheses.vim'       "rainbow parens for clojure
+Plugin 'dag/vim2hs'                         "haskell
+Plugin 'lambdatoast/elm.vim'                "elm
+Plugin 'rust-lang/rust.vim'                 "rust
+Plugin 'rking/ag.vim'
+" Plugin 'tpope/vim-cucumber'                 "cucumber syntax highlight
+" Plugin 'tpope/vim-rails'                    "rails stuff
 " Plugin 'mtscout6/vim-cjsx'                  "cjsx highlighting
 " Plugin 'marijnh/tern_for_vim'               "javascript analyzer
-Plugin 'tpope/vim-fireplace'                "clojure
 " Plugin 'guns/vim-clojure-static'            "clojure highlighting
 " Plugin 'guns/vim-clojure-highlight'         "clojure extended highlighting
-Plugin 'kien/rainbow_parentheses.vim'       "rainbow parens for clojure
 " Plugin 'vim-erlang/vim-erlang-runtime'      "erlang
 " Plugin 'elixir-lang/vim-elixir'             "elixir
-Plugin 'dag/vim2hs'                         "haskell
 " Plugin 'fatih/vim-go'                       "go
 " Plugin 'hdima/python-syntax'                "python
 " Plugin 'jcfaria/Vim-R-plugin'               "R
-Plugin 'lambdatoast/elm.vim'                "elm
-Plugin 'rking/ag.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -66,7 +67,8 @@ let g:syntastic_enable_signs=1
 let syntastic_mode_map = { 'passive_filetypes': ['html', 'java'] }
 
 "language specific linters
-let g:syntastic_javascript_checkers =['eslint']
+" let g:syntastic_javascript_checkers =['eslint']
+let g:syntastic_disabled_filetypes=['js']
 
 "cntrl P ignore list
 let g:ctrlp_custom_ignore = {
