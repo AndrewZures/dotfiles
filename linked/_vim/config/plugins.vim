@@ -25,6 +25,7 @@ Plugin 'dag/vim2hs'                         "haskell
 Plugin 'lambdatoast/elm.vim'                "elm
 Plugin 'rust-lang/rust.vim'                 "rust
 Plugin 'rking/ag.vim'
+Plugin 'raichoo/purescript-vim'             "purescript
 " Plugin 'tpope/vim-cucumber'                 "cucumber syntax highlight
 " Plugin 'tpope/vim-rails'                    "rails stuff
 " Plugin 'mtscout6/vim-cjsx'                  "cjsx highlighting
