@@ -11,6 +11,7 @@ export PATH="${PATH}:/usr/local/share/npm/bin:/usr/local/bin"
 export GOPATH="$HOME/go"
 export PATH="${PATH}:/usr/local/opt/go/libexec/bin"
 export PATH="${PATH}:$GOPATH/bin"
+export PATH="$HOME/Library/Haskell/bin:$PATH"
 
 # Env Vars
 export EDITOR=vim

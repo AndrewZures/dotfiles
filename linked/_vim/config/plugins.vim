@@ -26,6 +26,8 @@ Plugin 'lambdatoast/elm.vim'                "elm
 Plugin 'rust-lang/rust.vim'                 "rust
 Plugin 'rking/ag.vim'
 Plugin 'raichoo/purescript-vim'             "purescript
+Plugin 'eagletmt/ghcmod-vim'                "ghc-mod
+Plugin 'Shougo/vimproc'                     "ghc-mod dep
 " Plugin 'tpope/vim-cucumber'                 "cucumber syntax highlight
 " Plugin 'tpope/vim-rails'                    "rails stuff
 " Plugin 'mtscout6/vim-cjsx'                  "cjsx highlighting
@@ -70,6 +72,7 @@ let syntastic_mode_map = { 'passive_filetypes': ['html', 'java'] }
 "language specific linters
 " let g:syntastic_javascript_checkers =['eslint']
 let g:syntastic_disabled_filetypes=['js']
+let g:syntastic_haskell_checkers=['hlint']
 
 "cntrl P ignore list
 let g:ctrlp_custom_ignore = {
