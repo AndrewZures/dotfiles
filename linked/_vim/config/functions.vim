@@ -44,6 +44,12 @@ nmap g' :%s/<C-R><C-W>/
 " format entire file
 nmap gfo mzgg=G`z
 
+" pry shortcut
+nmap gfl orequire 'pry'; binding.pry;<C-c>
+
+" dash shortcut
+nmap gfk :Dash<ENTER>
+
 "hard coding 1 indexed tab moving
 nmap gtm1 :tabm0<CR>
 nmap gtm2 :tabm1<CR>

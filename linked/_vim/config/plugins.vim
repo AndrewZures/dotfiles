@@ -11,6 +11,7 @@ Plugin 'tpope/vim-fugitive'                 "git actions in vim
 Plugin 'kien/ctrlp.vim'                     "quick find files
 Plugin 'vim-scripts/tComment'               "commenter
 Plugin 'ervandew/supertab'                  "tab for autocomplete
+Plugin 'rizzatti/dash.vim'                  "dash integration
 " Emmett Needed
 
 "languages
@@ -28,6 +29,7 @@ Plugin 'rking/ag.vim'
 Plugin 'raichoo/purescript-vim'             "purescript
 Plugin 'eagletmt/ghcmod-vim'                "ghc-mod
 Plugin 'Shougo/vimproc'                     "ghc-mod dep
+Plugin 'elixir-lang/vim-elixir'             "elixir
 " Plugin 'tpope/vim-cucumber'                 "cucumber syntax highlight
 " Plugin 'tpope/vim-rails'                    "rails stuff
 " Plugin 'mtscout6/vim-cjsx'                  "cjsx highlighting
@@ -35,7 +37,6 @@ Plugin 'Shougo/vimproc'                     "ghc-mod dep
 " Plugin 'guns/vim-clojure-static'            "clojure highlighting
 " Plugin 'guns/vim-clojure-highlight'         "clojure extended highlighting
 " Plugin 'vim-erlang/vim-erlang-runtime'      "erlang
-" Plugin 'elixir-lang/vim-elixir'             "elixir
 " Plugin 'fatih/vim-go'                       "go
 " Plugin 'hdima/python-syntax'                "python
 " Plugin 'jcfaria/Vim-R-plugin'               "R
@@ -74,6 +75,7 @@ let g:syntastic_javascript_checkers =['eslint']
 let g:syntastic_haskell_checkers=['hlint']
 
 "cntrl P ignore list
+set smartcase
 let g:ctrlp_custom_ignore = {
       \ 'dir': 'node_modules\|git\|db/data\|tmp\|vendor\|public',
       \ 'file': '.zip\|.png\|.gif\|.jpeg\|.jpg\|.gz\|.tar\|.dmg',
