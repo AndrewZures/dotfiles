@@ -50,20 +50,6 @@ nmap gfl orequire 'pry'; binding.pry;<C-c>
 " dash shortcut
 nmap gfk :Dash<ENTER>
 
-"hard coding 1 indexed tab moving
-nmap gtm1 :tabm0<CR>
-nmap gtm2 :tabm1<CR>
-nmap gtm3 :tabm2<CR>
-nmap gtm4 :tabm3<CR>
-nmap gtm5 :tabm4<CR>
-
-"hard coding args for now
-nmap gtt1 @=MoveCurrentWindowToTab(1)<CR>
-nmap gtt2 @=MoveCurrentWindowToTab(2)<CR>
-nmap gtt3 @=MoveCurrentWindowToTab(3)<CR>
-nmap gtt4 @=MoveCurrentWindowToTab(4)<CR>
-nmap gtt5 @=MoveCurrentWindowToTab(5)<CR>
-
 "moves current window to another (existing) tab
 function MoveCurrentWindowToTab(tab_number)
   let a:buffer_number = bufnr('%')
