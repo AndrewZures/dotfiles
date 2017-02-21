@@ -69,7 +69,6 @@ alias raw-rails="rails"
 alias rebuild-test-db="RAILS_ENV=test bundle exec make build-db"
 
 alias desk='cd ~/Desktop'
-alias p="cd ~/Projects"
 alias mp="cd ~/Desktop/my_projects"
 alias hire="cd ~/Projects/Hireology/Code/app"
 
