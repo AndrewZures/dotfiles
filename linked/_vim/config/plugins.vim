@@ -77,7 +77,7 @@ let g:syntastic_haskell_checkers=['hlint']
 "cntrl P ignore list
 set smartcase
 let g:ctrlp_custom_ignore = {
-      \ 'dir': 'node_modules\|git\|db/data\|tmp\|vendor\|public',
+      \ 'dir': 'node_modules\|git\|db/data\|tmp\|vendor\|public\|spec/fixtures',
       \ 'file': '.zip\|.png\|.gif\|.jpeg\|.jpg\|.gz\|.tar\|.dmg',
       \ }
 
