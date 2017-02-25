@@ -29,7 +29,8 @@ Plugin 'rking/ag.vim'
 Plugin 'raichoo/purescript-vim'             "purescript
 Plugin 'eagletmt/ghcmod-vim'                "ghc-mod
 Plugin 'Shougo/vimproc'                     "ghc-mod dep
-Plugin 'elixir-lang/vim-elixir'             "elixir
+Plugin 'elixir-lang/vim-elixir'             "elixir - syntax
+Plugin 'slashmili/alchemist.vim'            "elixir - additional func
 " Plugin 'tpope/vim-cucumber'                 "cucumber syntax highlight
 " Plugin 'tpope/vim-rails'                    "rails stuff
 " Plugin 'mtscout6/vim-cjsx'                  "cjsx highlighting
@@ -73,6 +74,8 @@ let syntastic_mode_map = { 'passive_filetypes': ['html', 'java'] }
 "language specific linters
 let g:syntastic_javascript_checkers =['eslint']
 let g:syntastic_haskell_checkers=['hlint']
+let g:syntastic_elixir_checkers = ['elixir']
+let g:syntastic_enable_elixir_checker=1
 
 "cntrl P ignore list
 set smartcase
