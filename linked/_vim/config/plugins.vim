@@ -3,7 +3,7 @@ call vundle#begin()
 
 " basic
 Plugin 'gmarik/Vundle.vim'                  "bundle manager
-Plugin 'andrewzures/nerdtree'                "file tree with my custom tab settings
+Plugin 'scrooloose/nerdtree'                "file tree
 Plugin 'scrooloose/syntastic'               "general linter
 Plugin 'tpope/vim-surround'                 "quote/paren auto switch
 Plugin 'bling/vim-airline'
