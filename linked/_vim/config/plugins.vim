@@ -12,7 +12,6 @@ Plugin 'kien/ctrlp.vim'                     "quick find files
 Plugin 'vim-scripts/tComment'               "commenter
 Plugin 'ervandew/supertab'                  "tab for autocomplete
 Plugin 'rizzatti/dash.vim'                  "dash integration
-" Emmett Needed
 
 "languages
 Plugin 'tpope/vim-endwise'                  "ruby autocomplete
