@@ -48,7 +48,7 @@
 	smudge = git-media-smudge %f
 [core]
 	editor = vim
-	excludesfile = /Users/andrewzures/.gitignore_global
+	excludesfile = /Users/andrew.zures/.gitignore_global
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
